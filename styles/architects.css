@@ -299,7 +299,6 @@ main
    {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      
    }
 
 /* footer Start */
@@ -369,10 +368,12 @@ main
          }
       .experience
          {
-            position: relative;
-            margin-top: -20px;
-            margin-left: -10px;
-            z-index: 1;
+            position: absolute;
+            margin-top: 350px;
+            margin-left: 1%;
+            width: 70%;
+            height: 10%;
+            margin-bottom: 50px;
          }
       /* some-Facts Start */
       .info
@@ -387,7 +388,13 @@ main
          {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            margin: 0 auto;
+            gap: 10px;
+            margin-left: 25%;
+            margin-top: -10px;
+         }
+      .footer
+         {
+            padding-left: 10%;
          }
    }
 /* for tab */
@@ -439,6 +446,10 @@ main
          {
             width: 100%;
          }
+      .experience
+         {
+            margin-left: 25%;
+         }
       /* some-Facts Start */
       .info-facts
          {
@@ -450,4 +461,9 @@ main
             grid-template-columns: repeat(3, 1fr);
             margin-bottom: 20px;
          }
+      .footer
+      {
+         padding-left: 10%;
+         margin-bottom: 220px;
+      }
    }
