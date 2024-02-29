@@ -12,6 +12,7 @@ header
    {
       background-color: #fff4e7;
       padding: 20px 240px;
+      margin-bottom: 75px;
    }
 nav
    {
@@ -76,10 +77,10 @@ nav>ul>li>a
       text-decoration: none;
       color: #ffffff;
    }
-
-/* Responsive header */
-
-
+.banner-img img
+   {
+      width: 100%;
+   }
 /* Header section Style End */
 
 /* Main section style start */
@@ -87,19 +88,23 @@ main
    {
       padding: 75px 240px;
    }
+
+/* Quick features list Style Start */
 .quick-features
    {
-      padding: 60px;
+      padding: 0px 60px;
+      gap:75px;
       display: flex;
-      gap: 75px;
       justify-content: center;
       align-items: center;
+      margin-bottom: 130px;
    }
 .features-img
    {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 24px;
+      width: 100%;
    }
 .features-content
    {
@@ -122,4 +127,327 @@ main
       font-weight: 500;
       text-align: start;
       color: #ff900e;
+   }
+.fc-des
+   {
+      color: #727272;
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 24px;
+   }
+/* Quick Features list End */
+
+/* Features Enjoy Start */
+.enjoy
+   {
+      display: flex;
+      margin-bottom: 130px;
+   }
+.enjoy-content
+   {
+      margin-top: 30px;
+      width: 50%;
+   }
+.enjoy-title
+   {
+      color: #131313;
+      font-weight: 700px;
+      font-size: 45px;
+      margin-bottom: 24px;
+      border-left: 5px solid #ff900e;
+      padding-left: 20px;
+
+   }
+.enjoy-des
+   {
+      margin-bottom: 30px;
+   }
+.enjoy-card
+   {
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+   }
+.card-title
+   {
+      color: #131313;
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 10px;
+   }
+.enjoy-des .card-des
+   {
+      color: #727272;
+      font-weight: 400px;
+      font-size: 16px;
+   }
+.enjoy-img img 
+   {
+      z-index: 0;
+      width: 100%;
+   }
+.enjoy-img 
+   {
+      margin-left: 146px;
+   }
+.experience
+   {
+      position: relative;
+      background-color: #ff900e;
+      padding: 60px 10px;
+      width: 342px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: -120px;
+      margin-left: -100px;
+      z-index: 1;
+   }
+.experience h2
+   {
+      padding: 0px;
+      margin: 0px;
+      color: #ffffff;
+      font-size: 65px;
+      font-weight: 700;
+   }
+.experience p
+   {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 500;
+   }
+
+/* Start Some Facts */
+.some-facts
+   {
+      margin-bottom: 130px;
+   }
+.some-facts>.title
+   {
+      color: #131313;
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 24px;
+   }
+.some-facts>.des 
+   {
+      color: #727272;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 50px;
+   }
+.info-facts
+   {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: calc(124px - 65px);
+
+   }
+.info
+   {
+      padding: 50px 35px;
+      margin-left: 50px;
+      text-align: center;
+      border: 1px solid #ff900e;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+   }
+.info-data
+   {
+      width: 169px;
+      height: 136px;
+   }
+.info-data>h3
+   {
+      color: #424242;
+      font-weight: 500px;
+      font-size: 45px;
+   }
+.info-data>p
+   {
+      font-size: 20px;
+      font-weight: 500px;
+   }
+
+/* Start Sponspors */
+.sponspors
+   {
+      margin-bottom: 130px;
+      text-align: center;
+
+   }
+.sponspors>.title
+   {
+      color: #131313;
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 14px;
+   }
+.sponspors>.des
+   {
+
+      color: #424242;
+      font-size:16px;
+      font-weight: 400;
+      margin-bottom: 50px;
+   }
+.logo
+   {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      
+   }
+
+/* footer Start */
+.footer
+   {
+      display: flex;
+      justify-content: center;
+      background-color: #fff4e7;
+   }
+.footer p
+   {
+      padding: 39px 0px;
+      font-size: 20px;
+      font-weight: 400;
+   }
+/* Responsive header */
+/* Mobile Devices */
+@media screen and (max-width: 576px) 
+   {
+      /* Header Section */
+      header
+         {
+            padding: 20px;
+         }
+      nav
+         {
+            flex-direction: column;
+         }
+      .banner-content
+         {
+            padding: 0px;
+         }
+      /* Main Section */
+      main 
+         {
+            padding: 0px 36px;
+         }
+      .quick-features
+         {
+            flex-direction: column-reverse;
+            padding: 0px;
+            gap: 0px;
+
+         }
+      .features-img
+         {
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+         }
+      .enjoy
+         {
+            flex-direction: column;
+         }
+      .enjoy-img
+         {
+            display: flex;
+            justify-content: center;
+            margin-left: 0px;
+         }
+      .enjoy-img img 
+         {
+            width: 100%;
+         }
+      .enjoy-content
+         {
+            width: 100%;
+         }
+      .experience
+         {
+            position: relative;
+            margin-top: -20px;
+            margin-left: -10px;
+            z-index: 1;
+         }
+      /* some-Facts Start */
+      .info
+         {
+            margin-left: 0px;
+         }
+      .info-facts
+         {
+            grid-template-columns: repeat(1, 1fr);
+         }
+      .logo
+         {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0 auto;
+         }
+   }
+/* for tab */
+@media screen and (min-width: 576px) and (max-width: 960px ) 
+   {
+      /* Header Section */
+      header
+         {
+            padding: 40px;
+         }
+      nav
+         {
+            flex-direction: column;
+         }
+      .banner-content
+         {
+            padding: 20px;
+         }
+      
+      /* Main Scetion */
+      main 
+         {
+            padding: 0px 40px;
+         }
+      .quick-features
+         {
+            flex-direction: column-reverse;
+            padding: 0px;
+            gap: 0px;
+
+         }
+      .features-img
+         {
+            gap: 14px;
+         }
+      .enjoy
+         {
+            flex-direction: column;
+         }
+      .enjoy-img
+         {
+            margin-left: 0px;
+         }
+      .enjoy-img img 
+         {
+            width: 100%;
+         }
+      .enjoy-content
+         {
+            width: 100%;
+         }
+      /* some-Facts Start */
+      .info-facts
+         {
+            grid-template-columns: repeat(2, 1fr);
+         }
+      .logo
+         {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-bottom: 20px;
+         }
    }
